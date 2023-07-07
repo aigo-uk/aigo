@@ -1,3 +1,12 @@
 [submodule "themes/introduction"]
 	path = themes/introduction
 	url = https://github.com/victoriadrake/hugo-theme-introduction.git
+[submodule "themes/hugo-fresh"]
+	path = themes/hugo-fresh
+	url = https://github.com/StefMa/hugo-fresh.git
+[submodule "themes/bulma"]
+	path = themes/bulma
+	url = https://github.com/jgthms/bulma
+[submodule "hugo-fresh"]
+	path = hugo-fresh
+	url = https://github.com/StefMa/hugo-fresh.git
