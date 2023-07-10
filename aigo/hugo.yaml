@@ -8,3 +8,69 @@ module:
   imports:
     path: github.com/StefMa/hugo-fresh
 
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: "AI:GO"
+    # Hero subtitle (optional)
+    subtitle: "Setting you on your future path, today."
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: "illustrations/worker.svg"
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Features
+    url: /
+  - title: Contact
+    url: /
+  section1:
+    title: Services
+    subtitle: We have a range of bespoke offerings.
+    tiles:
+    - title: AI Chatbots
+      icon: mouse-globe
+      text: 1st class customer service 24/7
+      # Whatsapp, Facebook, Instagram
+      # Prospecting, Onboarding, Customer Service, Staff Training, Data Analysis
+      url: /contact
+      buttonText: Chat to our bot
+    - title: AI-Enhanced Automations
+      icon: laptop-cloud
+      text: Massively scale operational efficiency
+      url: /contact
+      buttonText: More details
+    - title: Content Generation Systems
+      icon: plug-cloud
+      text: Automate content creation
+      url: /contact
+      buttonText: More details
+  section2: 
+    title: You're here for customer satisfaction and operational efficiency
+    subtitle: And we deliver it
+    features:
+    - title: AI Chatbots
+      text: Transform your customer service and streamline operations with AI Chatbots. Our AI-powered chatbots provide personalized and instant responses, handling repetitive inquiries, order processing, appointment scheduling, and more. Improve customer experiences, reduce wait times, and increase efficiency. Our customizable and scalable solutions empower your team to focus on critical tasks while our AI Chatbots handle the rest. Leverage the power of AI-driven automation for 24/7 support, enhanced productivity, and unrivaled customer satisfaction. Elevate your business today with our AI Chatbot solutions.
+      icon: laptop-globe
+    - title: AI-Enhanced Automations
+      text: Boost productivity, efficiency, and accuracy with AI-Enhanced Automations. Our advanced solutions automate repetitive tasks, optimize workflows, and eliminate manual effort. Experience faster turnaround times, streamlined processes, and the ability to focus on strategic initiatives. Empower your business with transformative AI-driven automations for a competitive edge.
+      icon: doc-sync
+    - title: Content Generation Systems
+      text: Elevate your content creation process with Content Generation Systems. Our AI-powered solutions effortlessly produce high-quality, customized content. Overcome writer's block and enjoy a constant flow of engaging articles, social media posts, and compelling marketing copy. Streamline your workflow, save time, and captivate your audience with our transformative content generation technology.
+      icon: mobile-feed
+  section5:
+    title: Get in touch.
+    subtitle: Turbo charge your business with AI:GO today.
+    buttonText: Send Message
+
