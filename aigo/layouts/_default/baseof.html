@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/bd1615d4-8e3f-4c74-9510-03ee27369df5/webchat/config.js" defer></script>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+    {{ if ne .Site.Params.preloader false }}
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    {{ end }}
+
+    {{ block "main" . }}
+    {{ end }}
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ partial "javascript.html" . }}
+  </body>
+</html>
