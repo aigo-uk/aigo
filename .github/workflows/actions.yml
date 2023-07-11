@@ -65,7 +65,7 @@ jobs:
 
         - name: Fix permissions
           run: |
-            chmod -v -R +rX "public/" | while read line; do
+            cd aigo && chmod -v -R +rX "public/" | while read line; do
               echo "::warning title=Invalid file permissions automatically fixed::$line"
             done
         - name: Upload artifact
