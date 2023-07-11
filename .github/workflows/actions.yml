@@ -45,7 +45,7 @@ jobs:
 
         - name: Build with Hugo
           working-directory: docs
-          run: hugo -gc --minify --verbose
+          run: hugo --gc --minify --verbose
 
         - run: |
             ls -a &&
