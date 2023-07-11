@@ -48,8 +48,8 @@ jobs:
           run: hugo --gc --minify --verbose
 
         - run: |
-            ls -a &&
-            tree /
+            cd docs && ls -a
+            
   
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
