@@ -45,12 +45,8 @@ jobs:
 
         - name: Build with Hugo
           working-directory: docs
-          run: hugo --gc --minify --verbose
-
-        - run: |
-            cd docs && ls -a
+          run: hugo --minify --verbose
             
-  
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
           with:
